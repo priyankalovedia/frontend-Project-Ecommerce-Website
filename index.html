@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page - MyShop</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <div class="logo">MyShop</div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="cart-icon">
+                <a href="#cart-summary" style="color: white;">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span id="cart-count">0</span> <span id="cart-total"></span>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Product Section -->
+    <main class="product-section">
+        <div class="product-grid">
+            <!-- Product 1 -->
+            <div class="product-item">
+                <a href="#quick-view-popup-1" class="quick-view-button">Quick View</a>
+                <div class="product-image">
+                    <img src="product1.png" alt="Product 1">
+                </div>
+                <div class="product-details">
+                    <h1 class="product-name">Product 1</h1>
+                    <p class="product-description">Description of Product 1.</p>
+                    <p class="product-price">$19.99</p>
+                    <button class="add-to-cart-button" data-name="Product 1" data-price="19.99">Add to Cart</button>
+                </div>
+            </div>
+            <!-- Product 2 -->
+            <div class="product-item">
+                <a href="#quick-view-popup-2" class="quick-view-button">Quick View</a>
+                <div class="product-image">
+                    <img src="product2.png" alt="Product 2">
+                </div>
+                <div class="product-details">
+                    <h1 class="product-name">Product 2</h1>
+                    <p class="product-description">Description of Product 2.</p>
+                    <p class="product-price">$29.99</p>
+                    <button class="add-to-cart-button" data-name="Product 2" data-price="29.99">Add to Cart</button>
+                </div>
+            </div>
+            <!-- Product 3 -->
+            <div class="product-item">
+                <a href="#quick-view-popup-3" class="quick-view-button">Quick View</a>
+                <div class="product-image">
+                    <img src="product3.png" alt="Product 3">
+                </div>
+                <div class="product-details">
+                    <h1 class="product-name">Product 3</h1>
+                    <p class="product-description">Description of Product 3.</p>
+                    <p class="product-price">$15.99</p>
+                    <button class="add-to-cart-button" data-name="Product 3" data-price="15.99">Add to Cart</button>
+                </div>
+            </div>
+            <!-- Product 4 -->
+            <div class="product-item">
+                <a href="#quick-view-popup-4" class="quick-view-button">Quick View</a>
+                <div class="product-image">
+                    <img src="product4.png" alt="Product 4">
+                </div>
+                <div class="product-details">
+                    <h1 class="product-name">Product 4</h1>
+                    <p class="product-description">Description of Product 4.</p>
+                    <p class="product-price">$25.99</p>
+                    <button class="add-to-cart-button" data-name="Product 4" data-price="25.99">Add to Cart</button>
+                </div>
+            </div>
+            <!-- Product 5 -->
+            <div class="product-item">
+                <a href="#quick-view-popup-5" class="quick-view-button">Quick View</a>
+                <div class="product-image">
+                    <img src="product5.png" alt="Product 5">
+                </div>
+                <div class="product-details">
+                    <h1 class="product-name">Product 5</h1>
+                    <p class="product-description">Description of Product 5.</p>
+                    <p class="product-price">$22.99</p>
+                    <button class="add-to-cart-button" data-name="Product 5" data-price="22.99">Add to Cart</button>
+                </div>
+            </div>
+            <!-- Product 6 -->
+            <div class="product-item">
+                <a href="#quick-view-popup-6" class="quick-view-button">Quick View</a>
+                <div class="product-image">
+                    <img src="product6.png" alt="Product 6">
+                </div>
+                <div class="product-details">
+                    <h1 class="product-name">Product 6</h1>
+                    <p class="product-description">Description of Product 6.</p>
+                    <p class="product-price">$30.00</p>
+                    <button class="add-to-cart-button" data-name="Product 6" data-price="30.00">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Quick View Popups -->
+    <!-- Product 1 Quick View -->
+    <div id="quick-view-popup-1" class="quick-view-popup">
+        <a href="#" class="close">&times;</a>
+        <div class="quick-view-content">
+            <div class="quick-view-gallery">
+                <img src="product1.jpg" alt="Product 1">
+            </div>
+            <div class="quick-view-details">
+                <h1>Product 1</h1>
+                <p>Description of Product 1.</p>
+                <p>$19.99</p>
+                <button class="add-to-cart-button" data-name="Product 1" data-price="19.99">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+    <!-- Product 2 Quick View -->
+    <div id="quick-view-popup-2" class="quick-view-popup">
+        <a href="#" class="close">&times;</a>
+        <div class="quick-view-content">
+            <div class="quick-view-gallery">
+                <img src="product2.jpg" alt="Product 2">
+            </div>
+            <div class="quick-view-details">
+                <h1>Product 2</h1>
+                <p>Description of Product 2.</p>
+                <p>$29.99</p>
+                <button class="add-to-cart-button" data-name="Product 2" data-price="29.99">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+    <!-- Product 3 Quick View -->
+    <div id="quick-view-popup-3" class="quick-view-popup">
+        <a href="#" class="close">&times;</a>
+        <div class="quick-view-content">
+            <div class="quick-view-gallery">
+                <img src="product3.jpg" alt="Product 3">
+            </div>
+            <div class="quick-view-details">
+                <h1>Product 3</h1>
+                <p>Description of Product 3.</p>
+                <p>$15.99</p>
+                <button class="add-to-cart-button" data-name="Product 3" data-price="15.99">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+    <!-- Product 4 Quick View -->
+    <div id="quick-view-popup-4" class="quick-view-popup">
+        <a href="#" class="close">&times;</a>
+        <div class="quick-view-content">
+            <div class="quick-view-gallery">
+                <img src="product4.jpg" alt="Product 4">
+            </div>
+            <div class="quick-view-details">
+                <h1>Product 4</h1>
+                <p>Description of Product 4.</p>
+                <p>$25.99</p>
+                <button class="add-to-cart-button" data-name="Product 4" data-price="25.99">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+    <!-- Product 5 Quick View -->
+    <div id="quick-view-popup-5" class="quick-view-popup">
+        <a href="#" class="close">&times;</a>
+        <div class="quick-view-content">
+            <div class="quick-view-gallery">
+                <img src="product5.jpg" alt="Product 5">
+            </div>
+            <div class="quick-view-details">
+                <h1>Product 5</h1>
+                <p>Description of Product 5.</p>
+                <p>$22.99</p>
+                <button class="add-to-cart-button" data-name="Product 5" data-price="22.99">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+    <!-- Product 6 Quick View -->
+    <div id="quick-view-popup-6" class="quick-view-popup">
+        <a href="#" class="close">&times;</a>
+        <div class="quick-view-content">
+            <div class="quick-view-gallery">
+                <img src="product6.jpg" alt="Product 6">
+            </div>
+            <div class="quick-view-details">
+                <h1>Product 6</h1>
+                <p>Description of Product 6.</p>
+                <p>$30.00</p>
+                <button class="add-to-cart-button" data-name="Product 6" data-price="30.00">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cart Summary -->
+    <div id="cart-summary" class="cart-summary">
+        <a href="#" class="close-summary">&times;</a>
+        <h2>Cart Summary</h2>
+        <ul id="cart-items-list">
+            <!-- Cart items will be listed here -->
+        </ul>
+        <p id="cart-summary-total">Total: $0.00</p>
+        <a href="#" id="checkout-button">Checkout</a>
+    </div>
+
+    <!-- Footer Section -->
+<footer>
+    <div class="footer-content">
+        <div class="footer-logo">
+            <h2>MyShop</h2>
+        </div>
+        <div class="footer-links">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-contact">
+            <h3>Contact Us</h3>
+            <p>Email: support@myshop.com</p>
+            <p>Phone: +1 234 567 890</p>
+            <p>Address: 123 Shopping St, E-Commerce City, EC 12345</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 MyShop. All rights reserved.</p>
+    </div>
+</footer>
+
+
+    <!-- JavaScript -->
+    <script>
+        const cartItemsList = document.getElementById('cart-items-list');
+        const cartCount = document.getElementById('cart-count');
+        const cartTotal = document.getElementById('cart-total');
+        const cartSummaryTotal = document.getElementById('cart-summary-total');
+
+        let cart = [];
+
+        function updateCart() {
+            cartItemsList.innerHTML = '';
+            let total = 0;
+            cart.forEach(item => {
+                const li = document.createElement('li');
+                li.textContent = `${item.name} - $${item.price}`;
+                cartItemsList.appendChild(li);
+                total += parseFloat(item.price);
+            });
+            cartCount.textContent = cart.length;
+            cartTotal.textContent = total.toFixed(2);
+            cartSummaryTotal.textContent = `Total: $${total.toFixed(2)}`;
+        }
+
+        document.querySelectorAll('.add-to-cart-button').forEach(button => {
+            button.addEventListener('click', () => {
+                const name = button.getAttribute('data-name');
+                const price = button.getAttribute('data-price');
+                cart.push({ name, price });
+                updateCart();
+            });
+        });
+    </script>
+</body>
+</html>
